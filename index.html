@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazreen's Fitness </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2&family=Fruktur&family=Open+Sans&family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <!-- can browse fonts from google fonts * -->
+<!-- link:css -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Anton', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/girl3.jpg');
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    
+    }
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 3px 15px;
+        font-size: 20px;
+        display: inline-block;
+         
+    }
+    .navbar li a:hover , .navbar li a:active{
+color: rgb(231, 3, 3);
+text-decoration: underline;
+    }
+.left{
+/* border: 2px solid red; */
+display: inline-block;
+/*inline block will be inline along with width and height will be set along with
+top and bottom margins */
+
+position: relative;
+    top: 34px;
+    right: -14px;
+    left: 23px;
+     margin: -17px auto; 
+
+}
+.left img{
+    width: 120px;
+    /* filter: invert(100%); this is change the color of img black to white and white to black; */
+}
+.left div{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;;
+}
+.middle{
+
+    /* border: 2px solid yellow; */
+    font-weight: bold;
+    display: block;
+    width: 40%;
+    margin: -81px auto;
+}
+.right{
+    /* border: 2px solid darkgoldenrod; */
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top: 52px;
+    right: 23px;
+    margin: -15px auto;
+}
+.btn{
+    padding: 3px;
+    margin: 2px 9px;
+    top: 52px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid gray;
+    font-family: 'Anton', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.btn:hover{
+    color: red;
+    text-decoration: underline;
+    background-color: black;
+}
+.container{
+    /* border: 2px solid yellow; */
+    margin: 106px 80px;
+    padding: 75px;
+    width:  33%;
+    border-radius: 28px;
+}
+.form-group input{
+    /* font-siz: */
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin: 12px;
+    width: 472px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Anton', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.form-group input text{
+    color: red;
+}
+::placeholder{
+    color: red;
+    font-weight: bold;
+}
+.form-group button{
+      padding: 2px 15px ;
+      margin: 7px;
+      position: relative;
+}
+.container h1{
+    width: 518px;
+    font-family: 'Anton', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Fruktur', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.container button{
+    display: block;
+    width: 99%;
+    margin-left:27px auto;
+}
+.container form-group text{
+    color: red;
+}
+</style>
+<body>
+<header class="header"></header>
+<!-- left box for logo -->
+
+<div class=" left">
+    <img src="img/logo.jgp" alt="">
+    <div>Tazreen's Fitness</div>
+  
+</div>
+
+<!-- mid box for nav bar -->
+<div class="middle">
+<ul class="navbar">
+    <li><a href="#"class = "active">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Fitness calculator</a></li>
+    <li><a href="#">Contact us</a></li>
+</ul>
+</div>
+<!-- right box for buttons -->
+<div class="right">
+    <button class="btn">Call us now</button>
+    <button class="btn">Email us</button>
+</div>
+</header>
+<div class="container">
+    <h1>Join The Best Gym Of Bangalore</h1>
+    <!-- /* creating random form by build in php just for front end this
+        func goes to backend of php*/ -->
+    <form action="noaction.php">
+<div class="form-group">
+    <!-- input:text -->
+    <input type="text" name="" placeholder="Enter your name">
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Age">
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your gender">
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your location">
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your contact number">
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your email address">
+        </div>
+    <div class="form-group">
+    <input type="text" name="" placeholder="Enter your location">
+
+</div>
+    <!-- <input type="submit" class="btn"> -->
+     <button class="btn">Submit</button> 
+</div>
+
+    </form>
+</div>
+    
+</body>
+</html>
